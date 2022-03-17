@@ -110,12 +110,9 @@ main {
     margin-top: 10px;
     background-color: var(--dark);
     border-radius: 5px;
-    
+    bottom: -24vw;
     /* Remove absolute to shorten */
     position: absolute;
-    bottom: -24vw;
-    /* box-shadow: 3px 5px 20px rgb(0, 0, 0); */
-
 }
 
 .section-info-container p{
@@ -123,7 +120,6 @@ main {
     width: 100%;
     color: var(--off);
     font-size: 4.4vw;
-    /* margin-bottom: 30px; */
 }
 
 .img-container {
