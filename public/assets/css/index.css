@@ -120,6 +120,7 @@ main {
     justify-content: center;
     flex-wrap: wrap;
     position: absolute;
+    width: 100%;
 }
 
 .inner-img-container {
