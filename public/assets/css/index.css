@@ -48,7 +48,7 @@ header {
     z-index: 10;
 }
 nav {
-    width: 70%;
+    width: 80%;
     background-color: var(--dark);
     height: 60px;
     box-shadow: 3px 5px 20px rgb(0, 0, 0);
@@ -66,6 +66,8 @@ nav ul li {
     text-align: center;
     color: var(--off);
     font-size: 4vw;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 
@@ -82,37 +84,46 @@ main {
     display: flex;
     justify-content: center;
     width: 90%;
+    margin-bottom: 150px;
 }
 .section-background {
-    margin-top: 60px;
+    margin-top: 35px;
     width: 100%;
-    height: 100vw;
+    height: 82vw;
     max-height: 650px;
     background-color: var(--light);
     display: flex;
+    justify-content: center;
     align-items: flex-end;
     border-radius: 5px;
+    position: relative;
+    box-shadow: 3px 5px 20px rgb(0, 0, 0);
+    
 }
 .section-info-container {
-    height: fit-content;
-    width: 100%;
+    width: 80%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 120px;
-    /* padding-top: 60px; */
+    align-items: flex-end;
+    height: 40%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: var(--dark);
+    border-radius: 5px;
+    
+    /* Remove absolute to shorten */
+    position: absolute;
+    bottom: -22vw;
+    /* box-shadow: 3px 5px 20px rgb(0, 0, 0); */
+
 }
 
 .section-info-container p{
-    /* padding-top: 10px; */
     text-align: center;
-    width: 90%;
-    background-color: var(--dark);
+    width: 100%;
     color: var(--off);
-    /* padding-bottom: 10px; */
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 2.5vw;
+    font-size: 4.4vw;
+    /* margin-bottom: 30px; */
 }
 
 .img-container {
@@ -183,16 +194,21 @@ footer {
     }
     .section-background {
         width: 80%;
-        height: 35vw;
+        height: 40vw;
         min-height: 300px;
+        justify-content: center;
     }
     .section-info-container {
         margin-bottom: 2vw;
-        height: fit-content;
+        align-items: center;
+        width: 80%;
+        height: 20%;
+        position: initial;
+        
     }
     
     .section-info-container p{
-        width: 70%;
+        width: 80%;
         max-width: 500px;
         font-size: 16.5px;
     }
