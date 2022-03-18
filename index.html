@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="./public/assets/css/index.css"/>
+    <link rel="stylesheet" href="./fontawesome-free-6.1.0-web/css/all.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,30 +25,38 @@
     </header>
     <main>
         <section class="section-1">
-            <img src="./public/assets/images/story/pickup/1.jpeg" alt='picking up participant from their home'>
+            <img src="./public/assets/images/story/1.jpeg" alt='picking up participant from their home'>
             <div class="section-1-text">
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa deleniti omnis delectus repellat, corrupti quia sit consectetur quam expedita suscipit quos alias impedit consequuntur excepturi magni magnam rem laudantium distinctio!</p>
             </div>
         </section>
-        <section class="section-0">
+
+        <h1 class='story-h1'>A Day In Your Life</h1>
+        <section class="story-section">
             <div class='section-background'>
                 <div class="section-info-container">
-                    <p>Participants days at ADHC begins when the busses arrive to pick them up. Adult Day Health Care staff is fully equipped to handle any transportation needs.</p>
+                    <h3 id=story-time>8:00 a.m.</h3>
+                    <p id="story-text">Participants days at ADHC begins when the busses arrive to pick them up. Adult Day Health Care staff is fully equipped to handle any transportation needs.</p>
+                    <div class="story-section-fa-container">
+                        <i class="fa-solid fa-angle-left"></i>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
                 </div>
             </div>
             <div class="img-container">
-                <img src="./public/assets/images/story/pickup/0.jpeg" alt='picking up participant from their home'>
+                <img id="story-img-0" src="./public/assets/images/story/0.jpeg" alt='picking up participant from their home'>
 
                 <div class="inner-img-container">
-                    <img src="./public/assets/images/story/pickup/1.jpeg" alt='picking up participant from their home'>
-                    <img src="./public/assets/images/story/pickup/2.jpeg" alt='picking up participant from their home'>
+                    <img id="story-img-1" src="./public/assets/images/story/1.jpeg" alt='picking up participant from their home'>
+                    <img id="story-img-2" src="./public/assets/images/story/2.jpeg" alt='picking up participant from their home'>
                 </div>
                 
             </div>
         </section>
-
-        
-        
+        <section class='location'>
+            <h2>Address: 3800 Janes Rd, Arcata, CA 95521</h2>
+            <iframe class='map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3015.877756411268!2d-124.09211518465082!3d40.89649633424489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54d15752f687c411%3A0x58ff153b2d3c469!2s3800%20Janes%20Rd%2C%20Arcata%2C%20CA%2095521!5e0!3m2!1sen!2sus!4v1647644768999!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>  
+        </section>      
     </main>
     <footer>
         <p>ajoyceadhc@gmail.com</p>
@@ -56,4 +65,5 @@
         <p class="AIDAN">Website by Aidan Meyer</p>
     </footer>
 </body>
+<script src="./public/assets/js/index.js"></script>
 </html>
