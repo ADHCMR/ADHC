@@ -192,10 +192,13 @@ footer {
     display: block;
     text-align: center;
     height: 50px;
-    padding-bottom: 20px;
     color: var(--off);
     font-size: 14px;
     margin-top: 150px;
+    margin-bottom: 50px;
+}
+footer p {
+    margin-bottom: 10px;
 }
 
 .story-section-fa-container {
