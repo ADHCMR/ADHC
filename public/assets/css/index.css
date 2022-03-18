@@ -155,7 +155,7 @@ main {
 
 .section-1 img {
     width: 100%;
-    height: fit-content;
+    height: auto;
 }
 .section-1-text {
     margin-top: 10px;
