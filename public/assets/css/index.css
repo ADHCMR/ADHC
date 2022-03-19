@@ -1,6 +1,6 @@
 :root {
 	--light: rgb(211, 164, 255);
-	--dark: rgb(79, 0, 153);
+	--dark: rgb(114, 37, 185);
     --off: #d0d6dd;
   }
 
@@ -16,7 +16,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 header {
@@ -90,6 +90,61 @@ main {
     background: rgb(238, 224, 255);
     
 }
+
+.story {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.your-day {
+    display: flex;
+    position: relative;
+}
+
+.your-day img {
+    width: 50%;
+}
+
+.your-day-info-container {
+    background-color: var(--light);
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    padding-right: 60px;
+    /* align-items: center; */
+    align-content: space-evenly;
+    border-top: 3vw solid rgb(202, 144, 255);
+    border-bottom: 3vw solid rgb(202, 144, 255);
+    width: 50%;
+    
+
+}
+
+.your-day div h2{
+    font-size: 1.5vw;
+    z-index: 2;
+}
+
+.your-day div p {
+    font-size: 1.5vw;
+    z-index: 2;
+}
+
+.heart-img-container {
+    position: absolute;
+    background-color: none;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: .4;
+    height: 90%;
+    width: 40%;
+}
+
+
+
+
 /* section 0 */
 .story-section {
     display: flex;
