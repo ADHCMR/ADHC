@@ -108,7 +108,7 @@ main {
     justify-content: center;
     align-items: flex-end;
     flex-wrap: wrap;
-    height: 60%;
+    height: 50%;
     padding: 10px;
     margin-top: 10px;
     background-color: var(--dark);
@@ -119,6 +119,8 @@ main {
 }
 .section-info-container h3 {
     margin-top: 30px;
+    position: absolute;
+    top: 0;
 }
 
 .section-info-container p{
@@ -280,6 +282,7 @@ footer p {
         margin-top: 0px;
         font-size: 2vw;
         margin-right: 2vw;
+        position: initial;
     }
     
     .section-info-container p{
