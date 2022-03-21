@@ -39,8 +39,7 @@ for (let i = 0; i < storySections.length; i++) {
         <div class="tl-drp">
           <i 
           class="fa-light fa-bars" 
-          id='${i}'
-          style="display: flex; align-items: center; justify-content: center; font-size: 30px; color: var(--light); height: 50px;">
+          id='${i}'>
           </i>
           <div class='tl-txt'>
           <p 
