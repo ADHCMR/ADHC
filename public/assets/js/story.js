@@ -1,13 +1,6 @@
-const angleRightEl = document.querySelector('.fa-angle-right');
-const angleLeftEl = document.querySelector('.fa-angle-left');
+const mainEl = document.querySelector('#tl-main');
 
-const storyImg0El = document.querySelector('#story-img-0');
-const storyImg1El = document.querySelector('#story-img-1');
-const storyImg2El = document.querySelector('#story-img-2');
-const storyTimeEl = document.querySelector('#story-time');
-const storyTextEl = document.querySelector('#story-text');
-
-const storyImagesInfo = [
+const storySections = [
     {   time: '8:00 a.m.',
         text: 'Participants days at ADHC begins when the busses arrive to pick them up. Adult Day Health Care staff is fully equipped to handle any transportation needs.'
     },
@@ -29,44 +22,50 @@ const storyImagesInfo = [
     
 ]
 
-let a = 0;
-let b = 1;
-let c = 2
-let infoCount = 0;
+let fa = 'fa-light fa-bars';
 
-function nextStoryImages() {
-    if (infoCount<4) {
-        a+=3;
-        b+=3;
-        c+=3;
-        infoCount+=1;
-        storyImg0El.src=`./public/assets/images/story/${a}.jpeg`;
-        storyImg1El.src=`./public/assets/images/story/${b}.jpeg`;
-        storyImg2El.src=`./public/assets/images/story/${c}.jpeg`;
-        storyTimeEl.innerHTML=storyImagesInfo[infoCount].time;
-        storyTextEl.innerHTML=storyImagesInfo[infoCount].text;
-        return a,b,c,infoCount;
-    }
+for (let i = 0; i < storySections.length; i++) {
+    let sectionEl = document.createElement('section')
+    sectionEl.setAttribute('id', `tl-${i}`);
+    sectionEl.setAttribute('class', 'tl-sec')
+    mainEl.appendChild(sectionEl);
+    document.querySelector(`#tl-${i}`).innerHTML=`
+        <h3 class='tl-h3'>${storySections[i].time}</h3>
+        <img
+        src="./public/assets/images/story/${i}.jpeg"
+        alt="temp alt" 
+        class="tl-img"
+        />
+        <div class="tl-drp">
+          <i 
+          class="fa-light fa-bars" 
+          id='${i}'
+          style="display: flex; align-items: center; justify-content: center; font-size: 30px; color: var(--light); height: 50px;">
+          </i>
+          <div class='tl-txt'>
+          <p 
+          id='tl-txt-${i}'
+          style='display: none;'>${storySections[i].text}
+          </p>
+          <div class='tl-txt'>
+        </div>
+    `
 }
 
-function lastStoryImages() {
-    if (infoCount>0) {
-        a-=3;
-        b-=3;
-        c-=3;
-        infoCount-=1;
-        storyImg0El.src=`./public/assets/images/story/${a}.jpeg`;
-        storyImg1El.src=`./public/assets/images/story/${b}.jpeg`;
-        storyImg2El.src=`./public/assets/images/story/${c}.jpeg`;
-        storyTimeEl.innerHTML=storyImagesInfo[infoCount].time;
-        storyTextEl.innerHTML=storyImagesInfo[infoCount].text;
-        return a,b,c, infoCount;
+document.addEventListener('click', function(e) {
+    e = e || window.event;
+    let target = e.target || e.eventTarget,
+        text = target.textContent || target.innerText;   
+        if(target.localName === 'i') {
+        if (target.className === 'fa-light fa-bars') {
+            document.querySelector(`#tl-txt-${target.id}`).setAttribute('style', 'display: initial');
+            target.setAttribute('class', 'fa-light fa-x');
+            isOpen=true;
+        } else {
+            document.querySelector(`#tl-txt-${target.id}`).setAttribute('style', 'display: none');
+            target.setAttribute('class', 'fa-light fa-bars');
+            isOpen=false;
+        }
     }
-}
-
-angleRightEl.addEventListener('click', ()=> {
-    nextStoryImages();
-});
-angleLeftEl.addEventListener('click', ()=> {
-    lastStoryImages();
-});
+        
+}, false);

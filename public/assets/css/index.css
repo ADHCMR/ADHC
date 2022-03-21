@@ -2,13 +2,8 @@
 	--light: rgb(211, 164, 255);
 	--dark: rgb(114, 37, 185);
     --off: #d0d6dd;
+    --background: rgb(238, 224, 255)
   }
-
-.mt-1 {
-    margin-top: 80px;
-}
-
-
 /* phone screen :
                 V
 */
@@ -19,12 +14,14 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-header {
+/* HEADER START */
+.h-1 {
     width: 100%;
     height: 300px;
-    background: rgb(238, 224, 255);
+    background: var(--background);
+    position: relative;
 }
-.logo-container {
+.h-con-logo-1 {
     height: 50%;
     background-color: var(--light);
     display: flex;
@@ -32,15 +29,15 @@ header {
     justify-content: center;
 
 }
-.logo-container img {
+.logo-1 {
 
     width: 300px;
     height: auto;
     margin-bottom: 30px;
 }
-.nav-container {
+.h-con-nav-1 {
     width: 100%;
-    height: 300px;
+    height: 100%;
     position:absolute;
     top: 0;
     display: flex;
@@ -48,7 +45,7 @@ header {
     align-items: center;
     z-index: 10;
 }
-nav {
+.h-nav-1 {
     width: 80%;
     background-color: var(--dark);
     height: 60px;
@@ -56,484 +53,97 @@ nav {
 }
 nav ul{
     height: 100%;
-    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     list-style-type: none;
 }
 nav ul li {
-    text-align: center;
-    color: var(--off);
     font-size: 4vw;
-    margin-left: 5px;
-    margin-right: 5px;
+    text-align: center;
 }
 
 nav ul li a {
     color: var(--off);
     text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
 }
 
 nav ul li:hover, nav ul li a:hover {
     color: var(--light);
 }
+/* HEADER END */
 
 
+.land-img-div{
+    width: 90%;
+    text-align: center;
+    margin-bottom: 60px
+}
 
+.land-img-div img{
+    width: 100%;
+}
+
+
+/* TIME LINE SECTION START */
 
 main {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    width: 100%;
-    background: rgb(238, 224, 255);
-    
-}
-
-.story {
-    margin-top: 60px;
-    margin-bottom: 60px;
-}
-
-.your-day {
-    display: flex;
-    position: relative;
-}
-
-.your-day img {
-    width: 50%;
-}
-
-.your-day-info-container {
-    background-color: var(--light);
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 20px;
-    padding-right: 60px;
-    /* align-items: center; */
     align-content: space-evenly;
-    border-top: 3vw solid rgb(202, 144, 255);
-    border-bottom: 3vw solid rgb(202, 144, 255);
-    width: 50%;
-    
-
-}
-
-.your-day div h2{
-    font-size: 1.5vw;
-    z-index: 2;
-}
-
-.your-day div p {
-    font-size: 1.5vw;
-    z-index: 2;
-}
-
-.heart-img-container {
-    position: absolute;
-    background-color: none;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: .4;
-    height: 90%;
-    width: 40%;
-}
-
-
-
-
-/* section 0 */
-.story-section {
-    display: flex;
-    justify-content: center;
-    width: 90%;
-    margin: 20px;
-}
-.story-h1 {
-    margin-top: 60px;
-}
-.section-background {
-    margin-top: 35px;
-    width: 100%;
-    height: 82vw;
-    max-height: 650px;
-    background-color: var(--light);
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    border-radius: 5px;
+    flex-wrap: wrap;
+    background-color: var(--background);
     position: relative;
-    
 }
-.section-info-container {
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    flex-wrap: wrap;
-    height: 50%;
-    padding: 10px;
-    margin-top: 10px;
-    background-color: var(--dark);
+
+.tl-h2 {
+    background-color: var(--background);
+    z-index: 1;
+}
+
+.tl-lin {
+    width: 2px;
+    height: 100%;
+    background-color: var(--light);
     border-radius: 5px;
-    bottom: -33vw;
-    /* Remove absolute to shorten */
     position: absolute;
-}
-.section-info-container h3 {
-    margin-top: 30px;
-    position: absolute;
-    top: 0;
+    z-index: 0;
+
 }
 
-.section-info-container p{
-    text-align: center;
-    width: 100%;
-    color: var(--off);
-    font-size: 4.4vw;
-}
-
-.img-container {
+.tl-sec {
     display: flex;
     justify-content: center;
+    align-content: space-between;
     flex-wrap: wrap;
-    position: absolute;
-    width: 100%;
-}
-
-.inner-img-container {
-    margin-top: 20px;
-    width: 90%;
-    display: flex;
-    justify-content: space-around;
-}
-
-.img-container img {
     width: 80%;
-}
-.inner-img-container img {
-    width: 40%;
-}
-/* section 0 end */
-
-/* section 1 */
-.section-1 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 90%;
+    margin-top: 10px;
+    padding-bottom: 40px;
+    z-index: 1;
 }
 
-.section-1 img {
+.tl-h3 {
     width: 100%;
-    height: auto;
-}
-.section-1-text {
-    margin-top: 10px;
-    text-align: center;
+    background-color: var(--background);
 }
 
-.location {
+.tl-img {
     width: 100%;
-    margin-top: 50vw;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
-.location h2 {
-    margin-top: 10px;
-    width: 90%;
-    text-align: center;
-}
-
-.map {
-    margin-top: 10px;
-    width: 90%;
-    height: 90vw;
-}
-
-footer {
+.tl-drp {
     display: block;
     text-align: center;
-    height: 50px;
-    color: var(--off);
-    font-size: 14px;
-    padding-top: 150px;
-    padding-bottom: 50px;
-    background: rgb(238, 224, 255);
-}
-footer p {
-    margin-bottom: 10px;
-}
-
-.story-section-fa-container {
-    position: absolute;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    z-index: 100;
+    padding-top: 5px;
+    background-color: var(--background);
     width: 100%;
-    height: 100%;
-}
-.fa-angle-left, .fa-angle-right {
-    font-size: 30px;
-    color: rgb(121, 121, 121);
-    margin-left: 10px;
-    margin-right: 10px;
+    padding-bottom: 20px;
 }
 
-.fa-angle-left:hover, .fa-angle-right:hover {
-    opacity: .5;
-    cursor: pointer;
+.tl-txt {
+    border-bottom: 1px solid var(--dark);
 }
-
-
-
-.services{
-    background: var(--light);
-    margin-top: 20px;
-}
-
-.section-title {
-    text-align: center;
-    margin: 10px;
-    color: var(--dark)
-
-}
-
-.service-grid-wrapper{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    padding-bottom: 50px;
-}
-
-.service-grid-container {
-    background: rgb(238, 224, 255);
-    width: 80%;
-    display: grid;
-    grid-template-columns: 1fr repeat(2, 4fr);
-    grid-template-rows: repeat(5, 1fr) 2fr;
-    border: 2px solid var(--dark);
-    color: var(--dark);
-    font-size: 1.2rem;
-  }
-
-.service-grid-item{
-    padding: 15px 0;
-    border: 2px solid var(--dark);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.service-grid-item.basic{
-    grid-column: 2 / span 1;
-}
-
-.service-grid-item.both{
-    grid-column: span 2;
-}
-
-.service-grid-item.cancel{
-    grid-row: 1 / -1;
-    writing-mode: vertical-lr;
-    grid-column: 1;
-    grid-row: 1 / -1;
-    transform: rotate(180deg);
-}
-
-.grid-head, .grid-price, .service-grid-item.cancel{
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-/* Setting specific */
-.main-setting {
-    background: rgb(238, 224, 255);
-}
-
-header.setting {
-    background: rgb(238, 224, 255);
-    height: 250px
-}
-
-.logo-container.setting {
-    height: 150px;
-}
-
-footer.setting {
-    margin-top: 30px;
-    padding-top: 0;
-}
-
-.garden.setting {
-    width: 90%;
-}
-
-.setting.garden.div {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.setting.garden.p {
-    text-align: center;
-    margin-top: 15px;
-}
-.setting.garden img {
-    margin-top: 10px;
-}
-
-/* ^
-   : phone screen */
-
-/* computer screen :
-                   V
-*/
-
-@media screen and (min-width: 650px){
-    .mt-1 {
-        margin-top: 200px;
-    }
-    .logo-container img {
-        width: 30vw;
-        max-width: 400px;
-        min-width: 300px;
-        margin-bottom: 0;
-    }
-    .logo-container {
-        padding-left: 50px;
-        justify-content: flex-start;
-    }
-    nav {
-        width: 60%;
-    }
-    nav ul li {
-        font-size: 20px;
-    }
-    
-    .story-section {
-        align-items: flex-start;
-        width: 100%;
-        margin-top: 60px;
-    }
-    .story-h1 {
-        margin-top: 120px;
-    }
-    .section-background {
-        width: 80%;
-        height: 40vw;
-        min-height: 300px;
-        justify-content: center;
-    }
-    .section-info-container {
-        margin-bottom: 2vw;
-        align-items: center;
-        width: 80%;
-        height: 20%;
-        position: initial;
-        flex-wrap: nowrap;
-        /* justify-content: space-around; */
-        
-    }
-
-    .section-info-container h3 {
-        margin-top: 0px;
-        font-size: 2vw;
-        margin-right: 2vw;
-        position: initial;
-    }
-    
-    .section-info-container p{
-        width: 80%;
-        max-width: 500px;
-        font-size: 16.5px;
-    }
-    
-    .img-container {
-        width: 85%;
-        justify-content: space-around;
-        padding-left: 60px;
-        padding-right: 60px;
-    }
-    
-    .inner-img-container {
-        width: 23%;
-        flex-wrap: wrap;
-        align-content: space-between;
-        justify-content: flex-end;
-        margin: 0;
-    }
-    
-    .img-container img {
-        width: 50%
-    }
-    .inner-img-container img {
-        width: 100%;
-    }
-
-    /* section 0 end */
-
-    /* section 1  */
-
-    .section-1 {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: nowrap;
-        align-items: center;
-    }
-    .section-1 img {
-        width: 50%;
-    }
-    .section-1-text {
-        margin: 0 0 0 10px;
-    }
-
-    .location {
-        width: 70%;
-        min-width: 580px;
-        margin-top: 200px;
-        background-color: var(--light);
-        padding-bottom: 40px;
-    }
-    .map {
-        width: 500px;
-        height: 500px;
-    }
-
-    footer {
-        display: flex;
-        justify-content: space-around;
-        margin-bottom: 0;
-        padding-bottom: 0;
-        width: 100%;
-    }
-
-    footer p {
-        align-items: center;
-        display: flex;
-    }
-
-    .story-section-fa-container {
-        align-items: center;
-    }
-    .fa-angle-left, .fa-angle-right {
-        font-size: 50px;
-        margin-left: 3vw;
-        margin-right: 3vw;
-    }
-
-    /* setting specific */
-    .setting.garden.div {
-        width: 50%;
-    }
-
-
-/* ^
-   : computer screen */
+/* TIME LINE SECTION END */
