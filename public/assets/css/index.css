@@ -1,8 +1,8 @@
 :root {
 	--light: rgb(211, 164, 255);
-	--dark: rgb(123, 52, 189);
-    --off: #d0d6dd;
-    --background: rgb(238, 224, 255)
+	--dark: rgb(137, 74, 197);
+    --off: #ffffff;
+    --background: rgb(248, 244, 255);
   }
 /* phone screen :
                 V
@@ -152,9 +152,7 @@ main {
 /* FOOTER START */
 
 footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    text-align: center;
     background-color: var(--background);
     padding-bottom: 10px;
 }
