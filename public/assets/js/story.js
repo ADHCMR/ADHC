@@ -23,7 +23,7 @@ const storySections = [
 ]
 
 for (let i = 0; i < storySections.length; i++) {
-    let sectionEl = document.createElement('section')
+    let sectionEl = document.createElement('section');
     sectionEl.setAttribute('id', `tl-${i}`);
     sectionEl.setAttribute('class', 'tl-sec')
     mainEl.appendChild(sectionEl);
