@@ -27,6 +27,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 999;
+    width: 100%;
+    height: 150px;
+    position: fixed;
 
 }
 .logo-1 {
@@ -34,6 +38,9 @@
     width: 300px;
     height: auto;
     margin-bottom: 30px;
+}
+nav{
+    position: fixed;
 }
 .h-con-nav-1 {
     width: 100%;
@@ -43,7 +50,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 10;
+    z-index: 999;
 }
 .h-nav-1 {
     width: 80%;
@@ -129,6 +136,7 @@ main {
 .tl-h3 {
     width: 100%;
     background-color: var(--background);
+    margin-bottom: 10px;
 }
 
 .tl-img {
@@ -146,6 +154,7 @@ main {
 
 .tl-txt {
     border-bottom: 1px solid var(--dark);
+    padding: 10px 0;
 }
 /* TIME LINE SECTION END */
 
@@ -161,14 +170,62 @@ footer {
 
 /* FONT AWESOME START */
 
-.fa-bars, .fa-x {
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    font-size: 30px; color: 
-    var(--light); 
-    /* height: 50px; */
-    margin: 5px;
-}
 
 /* FONT AWESOME END */
+
+@media screen and (min-width: 768px) {
+    .h-con-logo-1 {
+        justify-content: flex-start;
+        padding-left: 20px;
+    }
+    .h-con-logo-1 {
+        width: 100%;
+        height: 150px;
+    }
+    .logo-1 {
+        width: 23vw;
+        margin: 0;
+        min-width: 300px;
+    }
+
+    nav {
+        max-width: 60%;
+    }
+
+    nav ul li {
+        font-size: 25px;
+    }
+    .land-img-div {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    .land-img-div img {
+        width: 50%;
+    }
+    .land-img-div p {
+        font-size: 2vw;;
+    }
+
+    .tl-h2 {
+        width: 100%;
+        text-align: center;
+        font-size: 3vw;
+        margin-top: 60px;
+    }
+    .tl-h3 {
+        font-size: 2vw;
+        margin-bottom: 20px;
+    }
+
+    .tl-sec {
+        width: 51%;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+}

@@ -22,8 +22,6 @@ const storySections = [
     
 ]
 
-let fa = 'fa-light fa-bars';
-
 for (let i = 0; i < storySections.length; i++) {
     let sectionEl = document.createElement('section')
     sectionEl.setAttribute('id', `tl-${i}`);
@@ -37,34 +35,12 @@ for (let i = 0; i < storySections.length; i++) {
         class="tl-img"
         />
         <div class="tl-drp">
-          <i 
-          class="fa-light fa-bars" 
-          id='${i}'>
-          </i>
           <div class='tl-txt'>
           <p 
           id='tl-txt-${i}'
-          style='display: none;'>${storySections[i].text}
+          style=''>${storySections[i].text}
           </p>
           <div class='tl-txt'>
         </div>
     `
 }
-
-document.addEventListener('click', function(e) {
-    e = e || window.event;
-    let target = e.target || e.eventTarget,
-        text = target.textContent || target.innerText;   
-        if(target.localName === 'i') {
-        if (target.className === 'fa-light fa-bars') {
-            document.querySelector(`#tl-txt-${target.id}`).setAttribute('style', 'display: initial');
-            target.setAttribute('class', 'fa-light fa-x');
-            isOpen=true;
-        } else {
-            document.querySelector(`#tl-txt-${target.id}`).setAttribute('style', 'display: none');
-            target.setAttribute('class', 'fa-light fa-bars');
-            isOpen=false;
-        }
-    }
-        
-}, false);
