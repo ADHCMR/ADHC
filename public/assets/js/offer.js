@@ -6,7 +6,7 @@ const offerSections = [
     {title: 'Social Workers', description: 'Assist with the admission process and offer resources, referrals, coordination with other service providers and advocacy for individual needs. They also lead guided discussion groups including a group just for Veterans.'},
     {title: 'Recreational Activities', description: 'Activities such as group outings, arts and crafts, games, live music, dancing, singing, storytelling, bingo, trivia, walks in the garden and Bible study.'},
     {title: 'Nutritional Services', description: 'A mid-morning snack and a nutritious hot meal at lunch time are included every day. Dietary counseling is also available with a registered dietician.'},
-    {title: 'Alzheimer\'s/Dementia', description: 'A specialized program in a safe, secure environment, caring for individuals with early through late stage dementia.'},
+    {title: 'Alzheimer\'s & Dementia', description: 'A specialized program in a safe, secure environment, caring for individuals with early through late stage dementia.'},
     {title: 'Transportation', description: 'Door-to-door van service is available to participants living within our transportation radius. Our service areas include: Eureka, Arcata, Blue Lake and McKinleyville.'}
 ]
 
