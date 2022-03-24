@@ -1,0 +1,108 @@
+/* START OF GRID */
+
+.services{
+    background: var(--background);
+    margin-top: 20px;
+}
+
+.section-title {
+    text-align: center;
+    margin: 30px;
+    color: var(--dark);
+
+}
+
+.service-grid-wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.service-grid-container {
+    background: rgb(238, 224, 255);
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr) 2fr;
+    border: 2px solid var(--dark);
+    color: var(--dark);
+    font-size: 1.2rem;
+  }
+
+.service-grid-item{
+    padding: 15px 0;
+    border: 2px solid var(--dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.service-grid-item.basic{
+    grid-column: 1 / span 1;
+}
+
+.service-grid-item.both{
+    grid-column: span 2;
+}
+
+.service-grid-item.cancel{
+    grid-row: 1 / -1;
+    writing-mode: vertical-lr;
+    grid-column: 1;
+    grid-row: 1 / -1;
+    transform: rotate(180deg);
+}
+
+.grid-head, .grid-price, .service-grid-item.cancel{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* END OF GRID */
+.main-setting {
+    background: var(--background);
+    padding-top: 60px;
+}
+
+
+.setting-rooms {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.setting-rooms div {
+    width: 90%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.setting-rooms img{
+    width: 100%;
+}
+.setting-rooms h3 {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: var(--background);
+}
+
+@media screen and (min-width: 768px) {
+    .setting-rooms {
+        flex-wrap: nowrap;
+        width: 90%;
+        justify-content: space-around;
+    }
+    .setting-rooms h3 {
+        font-size: 2vw;
+    }
+    .setting-rooms img {
+        width: 80%;
+    }
+    .section-title {
+        font-size: 2vw;
+        margin-top: 60px;
+    }
+}

@@ -1,7 +1,5 @@
 const phoneNavEl = document.querySelector('.h-nav');
 const faBarsEl = document.querySelector('#burger-menu');
-const header1El = document.querySelector('.h-1');
-const header2El = document.querySelector('.h-2');
 
 document.addEventListener('click', function(e) {
     e = e || window.event;

@@ -1,53 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel='stylesheet' href='./assets/css/index.css' />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What We Offer</title>
 
-    <main>
-        <h1 class="story-h1">A Day In Your Life</h1>
-      <section class="story-section">
-        <div class="section-background">
-          <div class="section-info-container">
-            <h3 id="story-time">8:00 a.m.</h3>
-            <p id="story-text">
-              Participants days at ADHC begins when the busses arrive to pick
-              them up. Adult Day Health Care staff is fully equipped to handle
-              any transportation needs.
-            </p>
-            <div class="story-section-fa-container">
-              <i class="fa-solid fa-angle-left"></i>
-              <i class="fa-solid fa-angle-right"></i>
-            </div>
-          </div>
-        </div>
-        <div class="img-container">
-          <img
-            id="story-img-0"
-            src="./assets/images/story/0.jpeg"
-            alt="picking up participant from their home"
-          />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../public/assets/css/index.css" />
+    <link rel="stylesheet" href="../public/assets/css/offer.css" />
 
-          <div class="inner-img-container">
-            <img
-              id="story-img-1"
-              src="./assets/images/story/1.jpeg"
-              alt="picking up participant from their home"
-            />
-            <img
-              id="story-img-2"
-              src="./assets/images/story/2.jpeg"
-              alt="picking up participant from their home"
-            />
-          </div>
-        </div>
-      </section>
-    </main>
+    <script
+      src="https://kit.fontawesome.com/7fdcfd23d0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="h-1">
+      <img
+        src="./assets/images/setting/0.jpeg"
+        alt="header image"
+        class="h-img"
+      />
+      <div class="h-txt-con">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis maiores
+          minus perspiciatis mollitia repudiandae? Nobis earum incidunt, sed
+          omnis vel inventore, et voluptate id numquam iure ab dolorum doloribus
+          quod.
+        </p>
+      </div>
+      <div class="h-con">
+        <img
+          src="../public/assets/images/logo.png"
+          alt="adult day health care logo"
+          class="logo"
+        />
+        <i class="fa-light fa-bars" id="burger-menu"></i>
+      </div>
+      <div class="h-nav-con">
+        <nav class="h-nav">
+          <ul>
+            <li><a href="../index.html">Our Program</a></li>
+            <li><a href="">What We Offer</a></li>
+            <li><a href="./setting.html">Physical Setting</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="offer"></main>
     
-</body>
+    <footer>
+      <p>ajoyceadhc@gmail.com</p>
+      <p>3800 Janes Rd, Arcata, CA 95521</p>
+      <p>© 2022 Adult Day Health Care</p>
+      <p class="AIDAN">Website by Aidan Meyer</p>
+    </footer>
+  </body>
+  <script src="./assets/js/offer.js"></script>
+  <script src="./assets/js/header.js"></script>
 </html>
