@@ -29,11 +29,18 @@ for (let i = 0; i < storySections.length; i++) {
     mainEl.appendChild(sectionEl);
     document.querySelector(`#tl-${i}`).innerHTML=`
         <h3 class='tl-h3'>${storySections[i].time}</h3>
+        <div class='tl-img-con'>
         <img
         src="./public/assets/images/story/${i}.jpeg"
         alt="temp alt" 
         class="tl-img"
         />
+        <img
+        src="./public/assets/images/story/${i}.jpeg"
+        alt="temp alt" 
+        class="tl-img"
+        />
+        </div>
         <div class="tl-drp">
           <div class='tl-txt'>
           <p 

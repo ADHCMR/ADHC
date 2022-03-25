@@ -1,0 +1,87 @@
+.enroll-main {
+    display: block;
+}
+.enroll-main h1 {
+    font-size: 6vw;
+    text-align: center;
+    padding-top: 60px;
+    width: 100%;
+}
+section {
+display: flex;
+flex-wrap: wrap;
+padding-top: 30px;
+padding-left: 50px;
+}
+section h2 {
+    width: 100%;
+    font-size: 5vw;
+}
+section ul {
+    font-size: 4vw;
+    line-height: 6vw;
+}
+
+footer {
+    font-size: 15px;
+}
+
+.map-con {
+    background-color: var(--background);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+}
+.map {
+    height: 20vw;
+    width: 20vw;
+    min-width: 300px;
+    min-height: 300px;
+}
+
+@media screen and (min-width: 768px) {
+    .enroll-main {
+        display: block;
+        padding-left: 100px;
+    }
+    .enroll-main h1 {
+        font-size: 3vw;
+        text-align: center;
+        padding-top: 120px;
+        padding-bottom: 60px;
+    }
+    section {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    }
+    section h2 {
+        width: 100%;
+        font-size: 2vw;
+    }
+    section ul {
+        font-size: 1.5vw;
+        line-height: 3vw;
+    }
+
+    .map-con {
+        background-color: var(--background);
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 150px;
+    }
+    .map {
+        height: 30vw;
+        width: 30vw;
+        min-width: 400px;
+        min-height: 400px;
+    }
+
+    footer {
+        padding-top: 100px
+    }
+
+
+}
