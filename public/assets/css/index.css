@@ -281,7 +281,7 @@ footer {
 
     .contact-dropdown {
         position: absolute;
-        justify-content: center;
+        justify-content: space-around;
         height: 60px;
         width: 50%;
         left: 25%;
