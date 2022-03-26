@@ -2,7 +2,7 @@ const headerEl = document.querySelector('.h-1');
 
 const windows = {
     index: {
-        path: './index.html',
+        path: './',
         headerImgPath: './public/assets/images/header/index.jpeg',
         headerText: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis maiores minus perspiciatis mollitia repudiandae? Nobis earum incidunt, sed omnis vel inventore, et voluptate id numquam iure ab dolorum doloribus quod.',
         logo: './public/assets/images/logo.png',
@@ -10,20 +10,20 @@ const windows = {
     },
     enroll: {
         path: './enroll.html',
-        headerImgPath: './public/assets/images/header/index.jpeg',
+        headerImgPath: './public/assets/images/header/enroll.jpeg',
         headerText: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis maiores minus perspiciatis mollitia repudiandae? Nobis earum incidunt, sed omnis vel inventore, et voluptate id numquam iure ab dolorum doloribus quod.',
         logo: './public/assets/images/logo.png',
         landingPagePath: '../index.html'
     },
     offer: {
         path: './offer.html',
-        headerImgPath: './public/assets/images/header/index.jpeg',
+        headerImgPath: './public/assets/images/header/offer.jpeg',
         headerText: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis maiores minus perspiciatis mollitia repudiandae? Nobis earum incidunt, sed omnis vel inventore, et voluptate id numquam iure ab dolorum doloribus quod.',
         landingPagePath: '../index.html'
     },
     setting: {
         path: './setting.html',
-        headerImgPath: './public/assets/images/header/index.jpeg',
+        headerImgPath: './public/assets/images/header/setting.jpeg',
         headerText: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis maiores minus perspiciatis mollitia repudiandae? Nobis earum incidunt, sed omnis vel inventore, et voluptate id numquam iure ab dolorum doloribus quod.',
         landingPagePath: '../index.html'
     }
@@ -31,6 +31,11 @@ const windows = {
 let url = window.location.pathname;
 let filename = url.substring(url.lastIndexOf('/')+1); 
 let page = filename.split('.')[0];
+
+if (!page) {
+    page = 'index'
+    console.log('l')
+}
 
 headerEl.innerHTML=
 `
@@ -57,7 +62,7 @@ headerEl.innerHTML=
       <div class="h-nav-con">
         <nav class="h-nav">
           <ul>
-            <li><a href="./index.html">Our Program</a></li>
+            <li><a href="./">Our Program</a></li>
             <li><a href="./offer.html">What We Offer</a></li>
             <li><a href="./setting.html">Physical Setting</a></li>
             <li><a href="./enroll.html">Enroll</a></li>

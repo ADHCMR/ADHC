@@ -36,7 +36,7 @@ for (let i = 0; i < storySections.length; i++) {
         class="tl-img"
         />
         <img
-        src="./public/assets/images/story/${i}.jpeg"
+        src="./public/assets/images/story/${i+1}.jpeg"
         alt="temp alt" 
         class="tl-img"
         />
