@@ -13,11 +13,19 @@ flex-wrap: wrap;
 padding-top: 30px;
 padding-left: 50px;
 }
+
+a {
+    color: var(--nav);
+    text-decoration: none;
+}
+#email-address:hover, #address:hover {
+    color: var(--nav)
+}
 section h2 {
     width: 100%;
     font-size: 5vw;
 }
-section ul {
+section ul, section ol {
     font-size: 4vw;
     line-height: 6vw;
 }
@@ -60,7 +68,7 @@ footer {
         width: 100%;
         font-size: 2vw;
     }
-    section ul {
+    section ol, section ul {
         font-size: 1.5vw;
         line-height: 3vw;
     }
@@ -70,13 +78,13 @@ footer {
         width: 100%;
         display: flex;
         justify-content: flex-start;
-        padding-left: 150px;
     }
     .map {
         height: 30vw;
         width: 30vw;
         min-width: 400px;
         min-height: 400px;
+        margin-left: 150px;
     }
 
     footer {

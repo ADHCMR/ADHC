@@ -27,7 +27,7 @@ for (let i = 0; i < offerSections.length; i++) {
         <h2>${offerSections[i].title}</h2>
         <p>${offerSections[i].description}</p>
         <div class="heart-img-container">
-          <img src="./assets/images/offer/logo-heart.png" />
+          <img src="./public/assets/images/offer/logo-heart.png" />
         </div>
       </div>
       <img src="./public/assets/images/offer/${i}.jpeg" />

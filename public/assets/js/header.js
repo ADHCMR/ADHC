@@ -39,7 +39,10 @@ headerEl.innerHTML=
       alt='header image'
       class='h-img'
     />
-    <a target="_blank" href='https://www.paypal.com/donate?token=QTKjr0sKfsGYpNfll1Ph92T9yGrgHbRSG-73MU_qiv8vcdImwG_oLZfR6dXig4IdttdnqK6rbouSphts'><i class="fa-solid fa-hand-holding-dollar donate"> Donate</i></a>
+    <a 
+    target="_blank" 
+    rel="noopener"
+    href='https://www.paypal.com/donate?token=QTKjr0sKfsGYpNfll1Ph92T9yGrgHbRSG-73MU_qiv8vcdImwG_oLZfR6dXig4IdttdnqK6rbouSphts'><i class="fa-solid fa-hand-holding-dollar donate"> Donate</i></a>
     <div class='h-txt-con'>
       <p>${windows[page].headerText}</p>
     </div>
@@ -60,7 +63,7 @@ headerEl.innerHTML=
             <li><a href="./enroll.html">Enroll</a></li>
             <li class='nav-contact'>Contact 
             <ul class='contact-dropdown'>
-            <li id='phone-number'>(707) 822-6320</li>
+            <li id='phone-number'>(707) 825-8059</li>
             <li id='email-address-header'>adhcofmadriver@outlook.com</li>
             </ul>
             </li>

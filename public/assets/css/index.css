@@ -1,5 +1,6 @@
 :root {
 	--light: rgb(248, 244, 255);
+    --light-o: rgb(255, 255, 255);
     --nav: rgb(67, 11, 119);
     --light-purple: rgb(207, 155, 255);
 	--dark: rgb(137, 74, 197);
@@ -39,7 +40,7 @@
 .h-1 {
     width: 100%;
     height: 400px;
-    background: var(--dark);
+    /* background: var(--dark); */
     position: relative;
     z-index: 999;
     /* background-image: url(../images/header/start.jpeg); */
@@ -68,7 +69,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--light);
+    background-color: white;
     /* background-image: url(../images/story/start.jpeg); */
     position: fixed;
     width: 100%;
@@ -110,8 +111,6 @@ nav ul li {
 nav ul li a, nav ul li {
     color: var(--off);
     text-decoration: none;
-    margin-left: 10px;
-    margin-right: 10px;
     display: flex;
 }
 

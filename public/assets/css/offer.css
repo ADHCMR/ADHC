@@ -32,13 +32,14 @@
     background-color: var(--text-background);
     display: flex;
     flex-wrap: wrap;
-    padding-left: 20px;
+    /* padding-left: 20px; */
     padding-right: 50px;
     /* align-items: center; */
     align-content: space-evenly;
     border-top: 3vw solid var(--border);
     border-bottom: 3vw solid var(--border);
     width: 50%;
+    position: inherit;
     
 
 }
@@ -46,11 +47,13 @@
 .offer-con div h2{
     font-size: 3vw;
     z-index: 2;
+    margin-left: 20px;
 }
 
 .offer-con div p {
     font-size: 2vw;
     z-index: 2;
+    margin-left: 20px;
 }
 
 .heart-img-container {
@@ -61,13 +64,14 @@
     align-items: center;
     justify-content: center;
     opacity: .4;
-    height: 90%;
-    width: 40%;
+    height: 100%;
+    width: 100%;
 }
 
 .heart-img-container img {
-    width: 70%;
-    margin-bottom: 10px;
+    width: 50%;
+    opacity: .5;
+    /* margin-left: -20px; */
 }
 
 footer {
