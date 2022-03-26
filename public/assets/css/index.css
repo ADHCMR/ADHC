@@ -183,11 +183,11 @@ main {
 .tl-h3 {
     width: 100%;
     background-color: var(--background);
-    margin-bottom: 10px;
 }
 
 .tl-img {
     width: 100%;
+    margin-top: 20px;
 }
 
 .tl-drp {
