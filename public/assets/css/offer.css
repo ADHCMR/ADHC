@@ -1,4 +1,9 @@
-.h-con {
+:root {
+    --border: rgb(200, 153, 241);
+    --text-background: rgb(244, 228, 255);
+}
+
+/* .h-con {
     background-color: var(--dark);
 }
 .fa-bars, .fa-x {
@@ -12,7 +17,7 @@
 }
 .h-nav ul li a:hover {
     color: var(--dark)
-}
+} */
 
 .offer-con {
     display: flex;
@@ -24,15 +29,15 @@
 }
 
 .offer-txt-container {
-    background-color: var(--light);
+    background-color: var(--text-background);
     display: flex;
     flex-wrap: wrap;
     padding-left: 20px;
     padding-right: 50px;
     /* align-items: center; */
     align-content: space-evenly;
-    border-top: 3vw solid rgb(202, 144, 255);
-    border-bottom: 3vw solid rgb(202, 144, 255);
+    border-top: 3vw solid var(--border);
+    border-bottom: 3vw solid var(--border);
     width: 50%;
     
 
@@ -55,7 +60,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: .3;
+    opacity: .4;
     height: 90%;
     width: 40%;
 }
