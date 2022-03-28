@@ -30,12 +30,7 @@ const windows = {
 }
 let url = window.location.pathname;
 let filename = url.substring(url.lastIndexOf('/')+1); 
-let page = filename.split('.')[0];
-
-if (!page) {
-    page = 'index'
-    console.log('l')
-}
+let page = filename.split('.')[0] || 'index';
 
 headerEl.innerHTML=
 `
@@ -124,7 +119,7 @@ resizeW = (toDo) => {
 }
 
 resizeW(function (width) {
-    if (width > 768) {
+    if (width >= 768) {
         phoneNavEl.setAttribute('style', 'display: initial');
         faBarsEl.setAttribute('style', 'display: none;');
     } else {
