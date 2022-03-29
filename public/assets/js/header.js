@@ -3,16 +3,14 @@ const headerEl = document.querySelector('.h-1');
 const windows = {
     index: {
         path: './',
-        headerImgPath: './public/assets/images/header/index.jpeg',
+        headerImgPath: './public/assets/images/header/index.webp',
         headerText: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis maiores minus perspiciatis mollitia repudiandae? Nobis earum incidunt, sed omnis vel inventore, et voluptate id numquam iure ab dolorum doloribus quod.',
-        logo: './public/assets/images/logo.png',
         landingPagePath: './index.html'
     },
     enroll: {
         path: './enroll.html',
-        headerImgPath: './public/assets/images/header/enroll.jpeg',
+        headerImgPath: './public/assets/images/header/enroll.webp',
         headerText: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis maiores minus perspiciatis mollitia repudiandae? Nobis earum incidunt, sed omnis vel inventore, et voluptate id numquam iure ab dolorum doloribus quod.',
-        logo: './public/assets/images/logo.png',
         landingPagePath: '../index.html'
     },
     offer: {
@@ -23,7 +21,7 @@ const windows = {
     },
     setting: {
         path: './setting.html',
-        headerImgPath: './public/assets/images/header/setting.jpeg',
+        headerImgPath: './public/assets/images/header/setting.webp',
         headerText: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis maiores minus perspiciatis mollitia repudiandae? Nobis earum incidunt, sed omnis vel inventore, et voluptate id numquam iure ab dolorum doloribus quod.',
         landingPagePath: '../index.html'
     }
@@ -48,7 +46,7 @@ headerEl.innerHTML=
     </div>
       <div class='h-con'>
         <img
-          src="./public/assets/images/logo.png"
+          src="./public/assets/images/logo.webp"
           alt="adult day health care logo"
           class="logo"
         />

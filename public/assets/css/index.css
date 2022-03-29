@@ -8,6 +8,10 @@
     --background: rgb(248, 244, 255);
   }
 
+  html {
+    background-color: var(--background);
+}
+
   #email-address, #address {
       cursor: pointer;
   }
@@ -31,7 +35,7 @@
     position: absolute;
     top: 100px;
     right: 30px;
-    color: black;
+    color: var(--light);
 }
 .donate:hover {
     color:rgb(255, 169, 56)
@@ -39,6 +43,8 @@
 
 .h-1 {
     width: 100%;
+    max-width: 100vw;
+    overflow: hidden;
     height: 400px;
     /* background: var(--dark); */
     position: relative;
@@ -46,17 +52,25 @@
     /* background-image: url(../images/header/start.jpeg); */
     /* padding-bottom: 20px; */
 }
+
 .h-img {
     position: absolute;
     height: 100%;
-    width: 100%;
+    min-width: 100%;
 }
+
+@media screen and (max-width: 470px) {
+    .h-img {
+        right: -100px
+    }
+}
+
 .h-txt-con {
     width: 100%;
     position: absolute;
     bottom: 0;
     height: 35%;
-    background-color: rgba(255, 255, 255, .5);
+    /* background-color: rgba(248, 244, 255, .5); */
     text-align: center;
     display: flex;
     align-items: center;
@@ -225,18 +239,26 @@ footer {
 
     .donate {
         z-index: 1000;
-        top: 90px;
+        top: 5.5vw;
         right: 8%;
         font-size: 20px;
+        color: black;
     }
 
 
     .h-1 {
-        height: 100vh;
+        height: 50vw;
+    }
+
+    .h-img {
+        width: 100%;
+        height: auto;
+        bottom: 0;
     }
     .h-con {
         position: absolute;
-        height: 200px;
+        height: 12vw;
+        min-height: 120px;
         z-index: 999;
     }
 .h-txt-con p {
@@ -247,7 +269,8 @@ footer {
 
     .h-nav-con {
         width: 100%;
-        height: 400px;
+        height: 24vw;
+        min-height: 240px;
         position: absolute;
         top: 0;
         display: flex;
