@@ -311,7 +311,7 @@ footer {
         height: 60px;
         width: 50%;
         left: 25%;
-        top: 250px;
+        top: 70%;
         background-color: var(--light);
         display: none;
     }
