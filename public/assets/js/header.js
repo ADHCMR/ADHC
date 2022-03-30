@@ -45,11 +45,13 @@ headerEl.innerHTML=
       <p>${windows[page].headerText}</p>
     </div>
       <div class='h-con'>
+      <a class='logo-a' href='./index.html'>
         <img
           src="./public/assets/images/logo.webp"
           alt="adult day health care logo"
           class="logo"
         />
+    </a>
         <i class="fa-light fa-bars" id='burger-menu'></i>
       </div>
       <div class="h-nav-con">
