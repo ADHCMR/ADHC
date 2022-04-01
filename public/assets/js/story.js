@@ -8,7 +8,8 @@ const storySections = [
         time: '9:00 a.m.',
         text: 'Filler1'
     },
-    {   time: '10:00 a.m.',
+    {   
+        time: '10:00 a.m.',
         text: 'Participants days at ADHC begins when the busses arrive to pick them up. Adult Day Health Care staff is fully equipped to handle any transportation needs.'
     },
     {
@@ -31,12 +32,12 @@ for (let i = 0; i < storySections.length; i++) {
         <h3 class='tl-h3'>${storySections[i].time}</h3>
         <div class='tl-img-con'>
         <img
-        src="./public/assets/images/story/${i}.jpeg"
+        src="./public/assets/images/story/${i}.webp"
         alt="temp alt" 
         class="tl-img"
         />
         <img
-        src="./public/assets/images/story/${i+1}.jpeg"
+        src="./public/assets/images/story/next${i}.webp"
         alt="temp alt" 
         class="tl-img"
         />

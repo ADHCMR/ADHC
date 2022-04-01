@@ -4,25 +4,25 @@ const windows = {
     index: {
         path: './',
         headerImgPath: './public/assets/images/header/index.webp',
-        headerText: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis maiores minus perspiciatis mollitia repudiandae? Nobis earum incidunt, sed omnis vel inventore, et voluptate id numquam iure ab dolorum doloribus quod.',
+        headerText: 'Adult Day Health Care is here to provide a broad range of services for medically at-risk adults over 18 years of age, allowing respite and peace of mind for caregivers. ADHC will quickly become your home away from home.',
         landingPagePath: './index.html'
     },
     enroll: {
         path: './enroll.html',
         headerImgPath: './public/assets/images/header/enroll.webp',
-        headerText: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis maiores minus perspiciatis mollitia repudiandae? Nobis earum incidunt, sed omnis vel inventore, et voluptate id numquam iure ab dolorum doloribus quod.',
+        headerText: 'Adult Day Health Care is here to provide a broad range of services for medically at-risk adults over 18 years of age, allowing respite and peace of mind for caregivers. ADHC will quickly become your home away from home.',
         landingPagePath: '../index.html'
     },
     offer: {
         path: './offer.html',
-        headerImgPath: './public/assets/images/header/offer.jpeg',
-        headerText: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis maiores minus perspiciatis mollitia repudiandae? Nobis earum incidunt, sed omnis vel inventore, et voluptate id numquam iure ab dolorum doloribus quod.',
+        headerImgPath: './public/assets/images/header/offer.webp',
+        headerText: 'Adult Day Health Care is here to provide a broad range of services for medically at-risk adults over 18 years of age, allowing respite and peace of mind for caregivers. ADHC will quickly become your home away from home.',
         landingPagePath: '../index.html'
     },
     setting: {
         path: './setting.html',
         headerImgPath: './public/assets/images/header/setting.webp',
-        headerText: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis maiores minus perspiciatis mollitia repudiandae? Nobis earum incidunt, sed omnis vel inventore, et voluptate id numquam iure ab dolorum doloribus quod.',
+        headerText: 'Adult Day Health Care is here to provide a broad range of services for medically at-risk adults over 18 years of age, allowing respite and peace of mind for caregivers. ADHC will quickly become your home away from home.',
         landingPagePath: '../index.html'
     }
 }
@@ -37,10 +37,22 @@ headerEl.innerHTML=
       alt='header image'
       class='h-img'
     />
-    <a 
-    target="_blank" 
-    rel="noopener"
-    href='https://www.paypal.com/donate?token=QTKjr0sKfsGYpNfll1Ph92T9yGrgHbRSG-73MU_qiv8vcdImwG_oLZfR6dXig4IdttdnqK6rbouSphts'><i class="fa-solid fa-hand-holding-dollar donate"> Donate</i></a>
+
+    <form 
+    class='donate'
+    action="https://www.paypal.com/cgi-bin/webscr" 
+    method="post" 
+    target="_blank">
+    <input name="cmd" type="hidden" value="_s-xclick"> 
+    <input name="hosted_button_id" type="hidden" value="WKVE46J2TL2MJ"> 
+    <input name="submit"
+    class='donate-img'
+    src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" type="image">
+    <i class="fa-solid fa-hand-holding-dollar "> Donate</i> 
+    </input>
+    </form>
+
+    
     <div class='h-txt-con'>
       <p>${windows[page].headerText}</p>
     </div>
@@ -63,7 +75,7 @@ headerEl.innerHTML=
             <li><a href="./enroll.html">Enroll</a></li>
             <li class='nav-contact'>Contact 
             <ul class='contact-dropdown'>
-            <li id='phone-number'>(707) 825-8059</li>
+            <li id='phone-number'>(707) 822-4866</li>
             <li id='email-address-header'>adhcofmadriver@outlook.com</li>
             </ul>
             </li>
@@ -127,4 +139,10 @@ resizeW(function (width) {
         faBarsEl.setAttribute('class', 'fa-light fa-bars');
         phoneNavEl.setAttribute('style', 'display: none');
     }
+});
+
+const emailHeaderEl = document.querySelector('#email-address-header');
+
+emailHeaderEl.addEventListener('click', function (){
+   window.open('mailto:adhcofmadriver@outlook.com');
 });

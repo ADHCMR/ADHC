@@ -40,7 +40,12 @@
 .donate:hover {
     color:rgb(255, 169, 56)
 }
-
+.donate-img {
+    position: absolute;
+    width: 130px;
+    height: 30px;
+    opacity: 0;
+}
 .h-1 {
     width: 100%;
     max-width: 100vw;
@@ -235,6 +240,8 @@ footer {
 
 /* FONT AWESOME END */
 
+
+
 @media screen and (min-width: 768px) {
 
     .donate {
@@ -258,6 +265,7 @@ footer {
     .h-con {
         position: absolute;
         height: 12vw;
+        max-height: 200px;
         min-height: 120px;
         z-index: 900;
     }
@@ -271,6 +279,7 @@ footer {
         width: 100%;
         height: 24vw;
         min-height: 240px;
+        max-height: 400px;
         position: absolute;
         top: 0;
         display: flex;
@@ -291,6 +300,7 @@ footer {
     .logo {
     
         width: 23vw;
+        max-width: 400px;
         min-width: 300px;
         margin-left: 4vw;
         z-index: 999;
@@ -372,4 +382,10 @@ footer {
     }
 
 
+}
+
+@media screen and (min-width: 769px) {
+    .donate {
+        top: 90px;
+    }
 }

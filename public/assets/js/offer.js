@@ -13,7 +13,7 @@ const offerSections = [
 for (let i = 0; i < offerSections.length; i++) {
     const innerHtml = [
         `<div class="offer-con">
-        <img src="./public/assets/images/offer/${i}.jpeg" />
+        <img src="./public/assets/images/offer/${i}.webp" />
         <div class="offer-txt-container">
           <h2>${offerSections[i].title}</h2>
           <p>${offerSections[i].description}</p>
@@ -30,7 +30,7 @@ for (let i = 0; i < offerSections.length; i++) {
           <img src="./public/assets/images/offer/logo-heart.png" />
         </div>
       </div>
-      <img src="./public/assets/images/offer/${i}.jpeg" />
+      <img src="./public/assets/images/offer/${i}.webp" />
     </div>`
     ]
     let sectionEl = document.createElement('section');
