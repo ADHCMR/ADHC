@@ -1,4 +1,14 @@
 const headerEl = document.querySelector('.h-1');
+resizeW = (toDo) => {
+    let width = window.innerWidth;
+    window.addEventListener('resize', function () {
+        width=window.innerWidth;
+        toDo(width);
+    });
+    window.addEventListener('load', ()=> {
+        toDo(width);
+    });
+}
 
 const windows = {
     index: {
@@ -30,6 +40,7 @@ let url = window.location.pathname;
 let filename = url.substring(url.lastIndexOf('/')+1); 
 let page = filename.split('.')[0] || 'index';
 
+
 headerEl.innerHTML=
 `
     <img 
@@ -48,7 +59,7 @@ headerEl.innerHTML=
     <input name="submit"
     class='donate-img'
     src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" type="image">
-    <i class="fa-solid fa-hand-holding-dollar "> Donate</i> 
+    <i class="fa-solid fa-hand-holding-dollar donate-button"> Donate</i> 
     </input>
     </form>
 
@@ -83,10 +94,21 @@ headerEl.innerHTML=
         </nav>
     </div>
 `
+
+
 const phoneNavEl = document.querySelector('.h-nav');
 const faBarsEl = document.querySelector('#burger-menu');
 const contactEl = document.querySelector('.nav-contact');
 const contactDropdownEl = document.querySelector('.contact-dropdown');
+const donateButtonEl = document.querySelector('.donate-button');
+
+window.addEventListener('load', ()=> {
+    if(window.innerWidth < 768 && page === 'offer') {
+        donateButtonEl.setAttribute('style', 'color: black');
+    } else if (width < 768){
+        donateButtonEl.setAttribute('style', 'color: white');
+    }
+});
 
 document.addEventListener('click', function(e) {
     e = e || window.event;
@@ -119,16 +141,7 @@ document.addEventListener('click', function(e) {
  //CONTACT NAV 'DROPDOWN' END
 
  
-resizeW = (toDo) => {
-    let width = window.innerWidth;
-    window.addEventListener('resize', function () {
-        width=window.innerWidth;
-        toDo(width);
-    });
-    window.addEventListener('load', ()=> {
-        toDo(width);
-    });
-}
+
 
 resizeW(function (width) {
     if (width >= 768) {
