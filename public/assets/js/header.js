@@ -104,13 +104,6 @@ const contactEl = document.querySelector('.nav-contact');
 const contactDropdownEl = document.querySelector('.contact-dropdown');
 const donateButtonEl = document.querySelector('.donate-button');
 
-window.addEventListener('load', ()=> {
-    if(window.innerWidth < 768 && page === 'offer') {
-        donateButtonEl.setAttribute('style', 'color: black');
-    } else if (window.innerWidth < 768){
-        donateButtonEl.setAttribute('style', 'color: white');
-    }
-});
 
 document.addEventListener('click', function(e) {
     e = e || window.event;
