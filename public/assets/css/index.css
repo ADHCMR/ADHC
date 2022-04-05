@@ -87,7 +87,8 @@
     /* background-color: rgba(248, 244, 255, .5); */
     text-align: center;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+    padding-bottom: 10px;
 }
 .h-txt-con p {
     margin-right: 20px;
