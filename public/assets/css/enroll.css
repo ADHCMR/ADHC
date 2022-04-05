@@ -30,17 +30,22 @@ section ul, section ol {
     line-height: 6vw;
 }
 
+
 label {
     font-size: 17px;
+    margin-left: 50px;
 }
 
 input {
     border: none;
     border-bottom: 2px solid black;
     height: 30px;
-    width: 90%;
-    margin-bottom: 20px;
+    width: 70%;
+    margin-bottom: 5px;
+    margin-top: 10px;
     border-radius: 0;
+    display: block;
+    margin-left: 50px;
 }
 .required {
     color: red;
@@ -105,7 +110,7 @@ footer {
         line-height: 3vw;
     }
 
-    form {
+    .form {
         width: 100%;
     }
 
