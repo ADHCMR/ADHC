@@ -59,6 +59,7 @@ input {
     color: white;
     border-radius: 5px;
     cursor: pointer;
+    margin-left: 50px;
 }
 
 #submit-button:hover {
