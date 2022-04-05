@@ -40,6 +40,11 @@ input {
     height: 30px;
     width: 90%;
     margin-bottom: 20px;
+    border-radius: 0;
+}
+.required {
+    color: red;
+    display: inline;
 }
 
 #submit-button {
@@ -104,10 +109,6 @@ footer {
         width: 100%;
     }
 
-    .required {
-        color: red;
-        display: inline;
-    }
 
     input {
         display: block;
