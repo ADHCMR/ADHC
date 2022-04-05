@@ -14,25 +14,27 @@ const windows = {
     index: {
         path: './',
         headerImgPath: './public/assets/images/header/index.webp',
-        headerText: 'Adult Day Health Care is here to provide a broad range of services for medically at-risk adults over 18 years of age, allowing respite and peace of mind for caregivers. ADHC will quickly become your home away from home.',
+        headerText: `Since 1985 Adult Day Health Care of Mad River has been providing a warm, welcoming,
+                    community based day program for adults who are dependent on others for some of
+                    their care.`,
         landingPagePath: './index.html'
     },
     enroll: {
         path: './enroll.html',
         headerImgPath: './public/assets/images/header/enroll.webp',
-        headerText: 'Adult Day Health Care is here to provide a broad range of services for medically at-risk adults over 18 years of age, allowing respite and peace of mind for caregivers. ADHC will quickly become your home away from home.',
+        headerText: 'Adult Day Health Care of Mad River is always accepting new participants. If you are interested in enrolling or just want to learn more about our program please call us or complete the short interest form below.',
         landingPagePath: '../index.html'
     },
     offer: {
         path: './offer.html',
         headerImgPath: './public/assets/images/header/offer.webp',
-        headerText: 'Adult Day Health Care is here to provide a broad range of services for medically at-risk adults over 18 years of age, allowing respite and peace of mind for caregivers. ADHC will quickly become your home away from home.',
+        headerText: 'Adult Day Health Care of Mad River offers a wide variety of professional services to serve the varied needs of our participants.',
         landingPagePath: '../index.html'
     },
     setting: {
         path: './setting.html',
         headerImgPath: './public/assets/images/header/setting.webp',
-        headerText: 'Adult Day Health Care is here to provide a broad range of services for medically at-risk adults over 18 years of age, allowing respite and peace of mind for caregivers. ADHC will quickly become your home away from home.',
+        headerText: 'Adult Day Health Care of Mad River offers two program rooms to better meet the needs of our participants. Both rooms offer access to our beautiful garden for a stroll or just taking in some fresh air.',
         landingPagePath: '../index.html'
     }
 }
@@ -105,7 +107,7 @@ const donateButtonEl = document.querySelector('.donate-button');
 window.addEventListener('load', ()=> {
     if(window.innerWidth < 768 && page === 'offer') {
         donateButtonEl.setAttribute('style', 'color: black');
-    } else if (width < 768){
+    } else if (window.innerWidth < 768){
         donateButtonEl.setAttribute('style', 'color: white');
     }
 });

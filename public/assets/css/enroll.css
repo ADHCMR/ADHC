@@ -15,7 +15,7 @@ padding-left: 50px;
 }
 
 a {
-    color: var(--nav);
+    color: var(--light-purple);
     text-decoration: none;
 }
 #email-address:hover, #address:hover {
@@ -29,6 +29,33 @@ section ul, section ol {
     font-size: 4vw;
     line-height: 6vw;
 }
+
+label {
+    font-size: 17px;
+}
+
+input {
+    border: none;
+    border-bottom: 2px solid black;
+    height: 30px;
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+#submit-button {
+    font-size: 20px;
+    padding: 5px;
+    background-color: var(--light-purple);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submit-button:hover {
+    color: var(--nav)
+}
+
+
 
 footer {
     font-size: 15px;
@@ -71,6 +98,20 @@ footer {
     section ol, section ul {
         font-size: 1.5vw;
         line-height: 3vw;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .required {
+        color: red;
+        display: inline;
+    }
+
+    input {
+        display: block;
+        width: 40%;
     }
 
     .map-con {
