@@ -31,6 +31,7 @@
 
 /* HEADER START */
 
+
 .donate {
     position: absolute;
     top: 100px;
@@ -246,6 +247,19 @@ footer {
     padding-top: 60px;
 }
 
+.home-away {
+    width: 100%;
+    height: fit-content;
+    display: block;
+    margin-bottom: 20px;
+}
+.home-away p {
+    text-decoration: underline;
+}
+.footer-info {
+    width: 100%;
+}
+
 /* FOOTER END */
 
 /* FONT AWESOME START */
@@ -393,9 +407,28 @@ footer {
 
     footer {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-around;
         padding-top: 60px;
         width: 100%;
+    }
+    .footer-info {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .home-away {
+        text-align: start;
+        margin-left: 3vw;
+    }
+
+    .home-away p {
+        font-style: italic;
+        text-decoration: none;
+        font-weight: 1000;
+        font-size: 1.5vw;
+        margin-bottom: 20px;
     }
 
 
