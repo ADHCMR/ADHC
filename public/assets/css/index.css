@@ -62,9 +62,15 @@
     /* padding-bottom: 20px; */
 }
 .intro {
-    display: flex;
+    /* display: flex; */
+    display: none;
     flex-wrap: wrap;
     justify-content: center;
+}
+.learn-more {
+    text-align: center;
+    color: var(--nav);
+    font-style: italic;
 }
 .intro p{
     width: 90%;
@@ -254,11 +260,14 @@ footer {
     margin-bottom: 20px;
 }
 .home-away p {
-    text-decoration: underline;
+    font-style: italic;
+    font-weight: 1000;
 }
 .footer-info {
     width: 100%;
 }
+
+
 
 /* FOOTER END */
 
@@ -373,6 +382,10 @@ footer {
     }
     .land-img-div p {
         font-size: 2vw;;
+    }
+
+    .learn-more {
+        font-size: 2vw;
     }
 
     .tl-h2 {

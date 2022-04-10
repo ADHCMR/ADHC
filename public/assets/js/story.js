@@ -57,3 +57,22 @@ for (let i = 0; i < storySections.length; i++) {
         </div>
     `
 }
+
+
+const learnMoreButtonEl = document.querySelector('.learn-more');
+const introEl = document.querySelector('.intro');
+let isIntro = false;
+
+learnMoreButtonEl.addEventListener('click', function() {
+    if (isIntro) {
+        isIntro=false;
+        learnMoreButtonEl.textContent='Click here to read more';
+        learnMoreButtonEl.setAttribute('style', 'color: var(--dark)');
+        introEl.setAttribute('style', 'display: none');
+    } else {
+        isIntro=true;
+        learnMoreButtonEl.textContent='Click here to read less';
+        learnMoreButtonEl.setAttribute('style', 'color: var(--light-purple)');
+        introEl.setAttribute('style', 'display: flex');
+    }
+})
